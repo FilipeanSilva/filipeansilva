@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.seccao {
+  display: table;
+  margin: auto;
+}
+
+.seccao div {
+  padding-top: 3em;
+}
+
+.seccao img {
+  padding-right: 1em;
+}
+
+.seccao span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.seccao img {
+  vertical-align: middle;
+}
+
+.seccao .location {
+  display: block;
+}
+
+.seccao .location img {
+  width: 2em;
+  height: auto;
+  position: relative;
+  bottom: 0;
+}
+
+.seccao .email {
+  display: block;
+}
+
+.seccao .email img {
+  width: 2em;
+  height: auto;
+  position: relative;
+  bottom: 0;
+}
+
+.seccao .phone {
+  display: block;
+}
+
+.seccao .phone img {
+  width: 2em;
+  height: auto;
+  position: relative;
+  bottom: 0;
+}
+
+.seccao .linkedin {
+  display: block;
+}
+
+.seccao .linkedin img {
+  width: 2em;
+  height: auto;
+  position: relative;
+  bottom: 0;
+}
+
+.seccao .github {
+  display: block;
+}
+
+.seccao .github img {
+  width: 2em;
+  height: auto;
+  position: relative;
+  bottom: 0;
+}
+/*# sourceMappingURL=main.css.map */

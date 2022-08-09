@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.apresentation {
+  background-image: url(../../auxiliar/img/pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: -6em;
+  margin-left: -1em;
+  margin-right: -1em;
+  height: 100vh;
+}
+
+.apresentation .auxTitle {
+  padding-top: 10em;
+}
+
+.apresentation .auxTitle #title {
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: #3d5595;
+  font-size: xxx-large;
+}
+
+.apresentation .fotografia img {
+  display: block;
+  margin: auto;
+  margin-top: 6em;
+  height: auto;
+  max-width: 50vw;
+  max-height: 40vh;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.apresentation #text {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 6em;
+  padding: 1em;
+  width: 70%;
+  font-family: 'Poppins';
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3em;
+  letter-spacing: 1px;
+}
+
+.apresentation #download-id {
+  margin: auto;
+  width: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.apresentation #download-id a {
+  color: brown;
+  margin: auto;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  font-weight: bold;
+  border-radius: 2em;
+  padding: 5px;
+}
+
+.apresentation #download-id a:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.title {
+  background-color: #3d5595;
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -1em;
+  margin-right: -1em;
+  height: 15vh;
+}
+
+.title h1 {
+  color: blanchedalmond;
+  margin: 0;
+}
+
+.education {
+  background-image: url(../../auxiliar/img/school.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -1em;
+  margin-right: -1em;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.education img {
+  padding-top: 6em;
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 20%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  max-height: 20vh;
+}
+
+.education p {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 3em;
+  width: 45%;
+  font-family: 'Poppins';
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3em;
+  padding: 1em;
+}
+
+.education a:link {
+  color: #311f62;
+}
+
+.education a:visited {
+  color: #5c0080;
+}
+
+.education a:hover {
+  color: red;
+}
+
+.education a:active {
+  color: blue;
+}
+
+.work {
+  background-image: url(../../auxiliar/img/work_meeting.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -1em;
+  margin-right: -1em;
+  margin-bottom: -1em;
+  display: block;
+}
+
+.work .imagens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  width: auto;
+  padding-top: 1em;
+}
+
+.work .imagens img {
+  height: auto;
+  width: 6%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  max-height: 20vh;
+}
+
+.work p {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 1em;
+  width: 45%;
+  font-family: 'Poppins';
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3em;
+  padding: 1em;
+}
+
+.work #intership_photo_id {
+  padding-top: 1em;
+  height: auto;
+  height: auto;
+  width: 70%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  max-height: 20vh;
+}
+
+.work a:link {
+  color: #311f62;
+}
+
+.work a:visited {
+  color: #5c0080;
+}
+
+.work a:hover {
+  color: red;
+}
+
+.work a:active {
+  color: blue;
+}
+
+@media screen and (min-height: 2500px) {
+  .apresentation {
+    height: auto;
+  }
+  .apresentation .auxTitle {
+    padding-top: 8em;
+  }
+  .apresentation .fotografia img {
+    width: 50%;
+  }
+  .education {
+    height: auto;
+  }
+  .education img {
+    padding-top: 6em;
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 60%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    max-height: 20vh;
+  }
+  .work {
+    height: auto;
+  }
+  .work .imagens {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    width: auto;
+    padding-top: 1em;
+  }
+  .work .imagens img {
+    height: auto;
+    width: 20%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    max-height: 20vh;
+  }
+}
+
+@media screen and (max-height: 1500px) {
+  .apresentation {
+    height: auto;
+  }
+  .apresentation .auxTitle {
+    padding-top: 8em;
+  }
+  .apresentation .fotografia img {
+    padding-top: 6em;
+    height: 50%;
+    width: auto;
+    max-width: -moz-max-content;
+    min-width: auto;
+  }
+  .education {
+    height: auto;
+  }
+  .education img {
+    padding-top: 6em;
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 60%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    max-height: 20vh;
+    min-height: 150px;
+  }
+  .work {
+    height: auto;
+  }
+  .work .imagens {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    width: auto;
+    padding-top: 1em;
+  }
+  .work .imagens img {
+    height: auto;
+    width: 20%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    min-height: 10vw;
+    max-height: 20vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */

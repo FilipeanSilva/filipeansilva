@@ -1,0 +1,46 @@
+const mobileBtn = document.getElementById('mobile-cta');
+const nav = document.querySelector('nav');
+const mobileBtnExit = document.getElementById('mobile-exit')
+
+mobileBtn.addEventListener('click', () => {
+    nav.classList.add('menu-btn')
+})
+
+mobileBtnExit.addEventListener('click', () => {
+    nav.classList.remove('menu-btn')
+})
+
+const homeBtn = document.getElementById('home-id');
+if (homeBtn)
+    homeBtn.addEventListener('click', () => {
+        window.location.href = "index.html";
+    })
+
+const resumeBtn = document.getElementById('resume-id');
+resumeBtn.addEventListener('click', () => {
+    window.location.href = "resume.html";
+})
+
+const contactBtn = document.getElementById('contact-id');
+if (contactBtn)
+contactBtn.addEventListener('click', () => {
+    window.location.href = "contact.html";
+})
+
+const img_resumeBtn = document.getElementById('img_resume-id');
+if (img_resumeBtn)
+    img_resumeBtn.addEventListener('click', () => {
+        window.location.href = "resume.html";
+    })
+
+var path = window.location.pathname;
+var page = path.split("/").pop();
+page = page.split(".html")[0];
+
+console.log(page);
+
+if (page == "index" || page == '')
+    page = "home";
+
+document.getElementById(page + "-id").style.fontWeight = "bold";
+document.getElementById(page + "-id").style.color = "grey";
