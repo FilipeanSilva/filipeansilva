@@ -240,6 +240,7 @@ nav .mobile-menu-exit {
     max-height: fit-content;
     height: auto;
   }
+  /*
   .hero .rightCol img:hover, .hero .leftCol img:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
@@ -249,6 +250,7 @@ nav .mobile-menu-exit {
     transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
     cursor: pointer;
   }
+  */
 }
 
 @media screen and (max-height: 1000px) {
@@ -274,6 +276,7 @@ nav .mobile-menu-exit {
     max-height: fit-content;
     height: auto;
   }
+  /*
   .hero .rightCol img:hover, .hero .leftCol img:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
@@ -283,5 +286,6 @@ nav .mobile-menu-exit {
     transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
     cursor: pointer;
   }
+  */
 }
 /*# sourceMappingURL=main.css.map */
