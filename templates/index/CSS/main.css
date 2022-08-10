@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 .apresentation {
-  background-image: url(../../auxiliar/img/pc.png);
+  background-image: url(/data/img/pc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -93,7 +93,7 @@
 }
 
 .education {
-  background-image: url(../../auxiliar/img/school.png);
+  background-image: url(/data/img/school.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -152,7 +152,7 @@
 }
 
 .work {
-  background-image: url(../../auxiliar/img/work_meeting.jpg);
+  background-image: url(/data/img/work_meeting.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

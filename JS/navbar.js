@@ -13,18 +13,18 @@ mobileBtnExit.addEventListener('click', () => {
 const homeBtn = document.getElementById('home-id');
 if (homeBtn)
     homeBtn.addEventListener('click', () => {
-        window.location.href = "index.html";
+        window.location.href = "/templates/index/index.html";
     })
 
 const resumeBtn = document.getElementById('resume-id');
 resumeBtn.addEventListener('click', () => {
-    window.location.href = "resume.html";
+    window.location.href = "/templates/resume/resume.html";
 })
 
 const contactBtn = document.getElementById('contact-id');
 if (contactBtn)
 contactBtn.addEventListener('click', () => {
-    window.location.href = "contact.html";
+    window.location.href = "/templates/contact/contact.html";
 })
 
 const img_resumeBtn = document.getElementById('img_resume-id');
