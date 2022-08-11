@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-.apresentation {
+.presentation {
   background-image: url(/data/img/pc.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,11 +10,11 @@
   height: 100vh;
 }
 
-.apresentation .auxTitle {
+.presentation .auxTitle {
   padding-top: 10em;
 }
 
-.apresentation .auxTitle #title {
+.presentation .auxTitle #title {
   display: block;
   margin: auto;
   text-align: center;
@@ -22,7 +22,7 @@
   font-size: xxx-large;
 }
 
-.apresentation .fotografia img {
+.presentation .fotografia img {
   display: block;
   margin: auto;
   margin-top: 6em;
@@ -33,7 +33,7 @@
   border-radius: 100%;
 }
 
-.apresentation #text {
+.presentation #text {
   display: block;
   margin: auto;
   text-align: center;
@@ -46,14 +46,14 @@
   letter-spacing: 1px;
 }
 
-.apresentation #download-id {
+.presentation #download-id {
   margin: auto;
   width: auto;
   padding: 10px;
   text-align: center;
 }
 
-.apresentation #download-id a {
+.presentation #download-id a {
   color: brown;
   margin: auto;
   font-size: 1em;
@@ -65,7 +65,7 @@
   padding: 5px;
 }
 
-.apresentation #download-id a:hover {
+.presentation #download-id a:hover {
   background: var(--primary-color);
   color: white;
 }
@@ -230,13 +230,13 @@
 }
 
 @media screen and (min-height: 2500px) {
-  .apresentation {
+  .presentation {
     height: auto;
   }
-  .apresentation .auxTitle {
+  .presentation .auxTitle {
     padding-top: 8em;
   }
-  .apresentation .fotografia img {
+  .presentation .fotografia img {
     width: 50%;
   }
   .education {
@@ -278,13 +278,13 @@
 }
 
 @media screen and (max-height: 1500px) {
-  .apresentation {
+  .presentation {
     height: auto;
   }
-  .apresentation .auxTitle {
+  .presentation .auxTitle {
     padding-top: 8em;
   }
-  .apresentation .fotografia img {
+  .presentation .fotografia img {
     padding-top: 6em;
     height: 50%;
     width: auto;
