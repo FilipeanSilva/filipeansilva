@@ -133,7 +133,7 @@ ul {
     cursor: pointer;
   }
   
-  @media only screen and (min-width: 825px) {
+  @media only screen and (min-width: 801px) {
     .mobile-menu, .mobile-menu-exit {
       display: none;
     }
@@ -201,7 +201,7 @@ ul {
     }
   }
   
-  @media only screen and (min-width: 1460px) {
+  @media only screen and (min-width: 1501px) {
     .container {
       width: 1400px;
       margin: auto;
@@ -253,7 +253,7 @@ ul {
     */
   }
   
-  @media screen and (max-height: 1000px) {
+  @media screen and (max-height: 1500px) {
     .hero {
       text-align: center;
       padding-left: 0;
