@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 .seccao {
   display: table;
   margin: auto;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 3%;
 }
 
 .seccao div {
@@ -27,13 +31,14 @@
 }
 
 .seccao .location {
+  padding-top: 1em;
   display: block;
 }
 
 .seccao .location img {
   width: 2em;
   height: auto;
-  position: relative;
+  position: static;
   bottom: 0;
 }
 
@@ -44,7 +49,7 @@
 .seccao .email img {
   width: 2em;
   height: auto;
-  position: relative;
+  position: static;
   bottom: 0;
 }
 
@@ -55,7 +60,7 @@
 .seccao .phone img {
   width: 2em;
   height: auto;
-  position: relative;
+  position: static;
   bottom: 0;
 }
 
@@ -66,18 +71,18 @@
 .seccao .linkedin img {
   width: 2em;
   height: auto;
-  position: relative;
+  position: static;
   bottom: 0;
 }
 
 .seccao .github {
   display: block;
+  padding-bottom: 1em;
 }
 
 .seccao .github img {
   width: 2em;
   height: auto;
-  position: relative;
+  position: static;
   bottom: 0;
 }
-/*# sourceMappingURL=main.css.map */
