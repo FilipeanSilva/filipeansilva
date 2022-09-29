@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@700&display=swap');
+.work, .presentation, .education p {
+   font-family: 'Noto Sans Mono', monospace;
+}
+
 .presentation {
   background-image: url(/data/img/pc.png);
   background-repeat: no-repeat;
@@ -40,7 +44,6 @@
   margin-top: 6em;
   padding: 1em;
   width: 70%;
-  font-family: 'Poppins';
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 3em;
   letter-spacing: 1px;
@@ -129,7 +132,6 @@
   text-align: center;
   margin-top: 3em;
   width: 45%;
-  font-family: 'Poppins';
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 3em;
   padding: 1em;
@@ -196,7 +198,6 @@
   text-align: center;
   margin-top: 1em;
   width: 45%;
-  font-family: 'Poppins';
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 3em;
   padding: 1em;
