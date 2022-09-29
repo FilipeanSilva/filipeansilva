@@ -43,4 +43,4 @@ if (page == "index" || page == '')
     page = "home";
 
 document.getElementById(page + "-id").style.fontWeight = "bold";
-document.getElementById(page + "-id").style.color = "grey";
+document.getElementById(page + "-id").style.textDecoration= "underline";

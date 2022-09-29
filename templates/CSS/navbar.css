@@ -83,16 +83,6 @@ ul {
     max-height: fit-content;
   }
   
-  /* .hero .rightCol img:hover, .hero .leftCol img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: -webkit-transform ease-in-out 0.3s;
-    transition: -webkit-transform ease-in-out 0.3s;
-    transition: transform ease-in-out 0.3s;
-    transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
-    cursor: pointer;
-  } */
-  
   nav.menu-btn {
     display: block;
   }
@@ -240,17 +230,6 @@ ul {
       max-height: fit-content;
       height: auto;
     }
-    /*
-    .hero .rightCol img:hover, .hero .leftCol img:hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
-      -webkit-transition: -webkit-transform ease-in-out 0.3s;
-      transition: -webkit-transform ease-in-out 0.3s;
-      transition: transform ease-in-out 0.3s;
-      transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
-      cursor: pointer;
-    }
-    */
   }
   
   @media screen and (max-height: 1500px) {
