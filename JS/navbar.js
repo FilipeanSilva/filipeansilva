@@ -1,46 +1,47 @@
 const mobileBtn = document.getElementById('mobile-cta');
 const nav = document.querySelector('nav');
-const mobileBtnExit = document.getElementById('mobile-exit')
+const mobileBtnExit = document.getElementById('mobile-exit');
 
 mobileBtn.addEventListener('click', () => {
-    nav.classList.add('menu-btn')
-})
+  nav.classList.add('menu-btn');
+});
 
 mobileBtnExit.addEventListener('click', () => {
-    nav.classList.remove('menu-btn')
-})
+  nav.classList.remove('menu-btn');
+});
 
 const homeBtn = document.getElementById('home-id');
 if (homeBtn)
-    homeBtn.addEventListener('click', () => {
-        window.location.href = "/templates/index/index.html";
-    })
+  homeBtn.addEventListener('click', () => {
+    window.location.href = '/templates/index/index.html';
+  });
 
 const resumeBtn = document.getElementById('resume-id');
 resumeBtn.addEventListener('click', () => {
-    window.location.href = "/templates/resume/resume.html";
-})
+  window.location.href = '/templates/resume/resume.html';
+});
 
 const contactBtn = document.getElementById('contact-id');
 if (contactBtn)
-contactBtn.addEventListener('click', () => {
-    window.location.href = "/templates/contact/contact.html";
-})
+  contactBtn.addEventListener('click', () => {
+    window.location.href = '/templates/contact/contact.html';
+  });
 
 const img_resumeBtn = document.getElementById('img_resume-id');
 if (img_resumeBtn)
-    img_resumeBtn.addEventListener('click', () => {
-        window.location.href = "resume.html";
-    })
+  img_resumeBtn.addEventListener('click', () => {
+    window.location.href = 'resume.html';
+  });
 
 var path = window.location.pathname;
-var page = path.split("/").pop();
-page = page.split(".html")[0];
+var page = path.split('/').pop();
+page = page.split('.html')[0];
 
 console.log(page);
 
-if (page == "index" || page == '')
-    page = "home";
+if (page == 'index' || page == '') page = 'home';
 
-document.getElementById(page + "-id").style.fontWeight = "bold";
-document.getElementById(page + "-id").style.textDecoration= "underline";
+document.getElementById(page + '-id').style.fontWeight = 'bold';
+
+if (page != 'contact')
+  document.getElementById(page + '-id').style.textDecoration = 'underline';
