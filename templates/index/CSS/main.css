@@ -320,12 +320,13 @@
     width: auto;
     padding-top: 1em;
   }
+  
   .work .imagens img {
     height: auto;
     width: 20%;
     max-width: -webkit-max-content;
     max-width: -moz-max-content;
-    max-width: max-content;
+    max-width: 10vw;
     min-height: 10vw;
     max-height: 20vh;
   }
