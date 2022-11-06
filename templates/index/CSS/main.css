@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@700&display=swap');
-.work, .presentation, .education p {
-   font-family: 'Noto Sans Mono', monospace;
+
+p {
+  font-family: 'open sans';
 }
 
 .presentation {
@@ -80,11 +81,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: -1em;
   margin-right: -1em;
   height: 15vh;
@@ -102,11 +103,11 @@
   background-attachment: fixed;
   height: 100vh;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: -1em;
   margin-right: -1em;
   display: block;
@@ -160,11 +161,11 @@
   background-attachment: fixed;
   height: 100vh;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: -1em;
   margin-right: -1em;
   margin-bottom: -1em;
@@ -176,8 +177,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: auto;
   width: auto;
   padding-top: 1em;
@@ -262,8 +263,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     height: auto;
     width: auto;
     padding-top: 1em;
@@ -315,13 +316,13 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     height: auto;
     width: auto;
     padding-top: 1em;
   }
-  
+
   .work .imagens img {
     height: auto;
     width: 20%;
@@ -332,4 +333,3 @@
     max-height: 20vh;
   }
 }
-/*# sourceMappingURL=main.css.map */
