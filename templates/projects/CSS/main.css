@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
+
+.projectImages {
+  height: 60vh;
+}
+
+.projectDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.projectContent > p {
+  margin-left: 3em;
+}
+
+.titleNr {
+  font-family: 'Press Start 2P', cursive;
+  font-size: medium;
+  color: #264653;
+}
+
+.projectTitle {
+  font-family: 'Kanit', sans-serif;
+  font-size: x-large;
+  color: #2a9d8f;
+}
