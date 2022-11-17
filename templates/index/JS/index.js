@@ -36,7 +36,7 @@ typingTitle();
 
 function isIOS() {
   let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-  console.log(isIOS);
+  console.log("Is iOS? " + ((isIOS)?"Yes":"No"));
 
   if (isIOS == true) {
     let elems = document.getElementsByClassName('presentation');
