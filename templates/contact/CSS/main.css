@@ -1,71 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .seccao {
   display: table;
   margin: auto;
-  background-color: #E3D5CA;
+  background-color: #e3d5ca;
   margin-top: 10px;
   border-radius: 3%;
 }
 
-.seccao div {
-  padding-top: 3em;
-}
-
-.seccao img {
-  padding-right: 1em;
-}
-
-.seccao span {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  vertical-align: middle;
-}
-
-.seccao img {
-  vertical-align: middle;
-}
-
-.seccao .location {
-  padding-top: 1em;
-  display: block;
-}
-
-.seccao .location img {
-  width: 2em;
-  height: auto;
-  position: static;
-  bottom: 0;
-}
-
-.seccao .email {
-  display: block;
-}
-
-.seccao .email img {
-  width: 2em;
-  height: auto;
-  position: static;
-  bottom: 0;
-}
-
-.seccao .phone {
-  display: block;
-}
-
-.seccao .phone img {
-  width: 2em;
-  height: auto;
-  position: static;
-  bottom: 0;
-}
-
 .subhead {
-  color: #D5BDAF;
+  color: #d5bdaf;
   font-size: xx-large;
   font-weight: bold;
   margin: auto;
@@ -74,25 +18,21 @@
   margin: auto;
 }
 
-.seccao .linkedin {
-  display: block;
-}
-
-.seccao .linkedin img {
-  width: 2em;
-  height: auto;
-  position: static;
-  bottom: 0;
-}
-
-.seccao .github {
-  display: block;
+.seccao div {
+  padding-top: 1em;
   padding-bottom: 1em;
 }
 
-.seccao .github img {
+.seccao img {
+  padding-right: 1em;
+  vertical-align: middle;
   width: 2em;
   height: auto;
   position: static;
   bottom: 0;
+}
+
+.seccao .location .email .phone .linkedin .github {
+  /* padding: 1em; */
+  display: block;
 }
