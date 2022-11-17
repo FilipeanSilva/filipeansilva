@@ -38,14 +38,17 @@ function addEventListeners() {
   }
 }
 
-let page = window.location.pathname.split('/').pop().split('.html')[0];
-console.log(page);
+function setCurrentPageEffect() {
+  let page = window.location.pathname.split('/').pop().split('.html')[0];
+  console.log(page);
 
-if (page == 'index' || page == '') {
-  page = 'home';
+  if (page == 'index' || page == '') {
+    page = 'home';
+  }
+
+  document.getElementById(page + '-id').style.fontWeight = 'bold';
+  document.getElementById(page + '-id').style.textDecoration = 'underline';
 }
 
-document.getElementById(page + '-id').style.fontWeight = 'bold';
-document.getElementById(page + '-id').style.textDecoration = 'underline';
-
 addEventListeners();
+setCurrentPageEffect();
