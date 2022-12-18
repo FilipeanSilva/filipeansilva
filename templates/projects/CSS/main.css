@@ -1,32 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
-
-.projectImages {
-  height: 60vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.projectDiv {
+.slide_container {
+  min-height: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
 }
 
-.projectContent {
+.image_content{
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.projectContent > p {
-  margin-left: 3em;
+.card_image {
+  position: relative;
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
 }
 
-.titleNr {
-  font-family: 'Press Start 2P', cursive;
-  font-size: medium;
-  color: #264653;
-}
-
-.projectTitle {
-  font-family: 'Kanit', sans-serif;
-  font-size: x-large;
-  color: #2a9d8f;
+.card_image .card_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
