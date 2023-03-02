@@ -11,10 +11,11 @@ ul {
 }
 
 .navbar {
-  background: #D6CCC2;
+  /* background: #132cbf; */
+  background-image: linear-gradient(to right, #3d5595 , #c5c5c5);
   padding: 1em;
   border-style: solid;
-  border-color: #F5EBE0;
+  border-color: none;
   border-radius: 0.8em;
   border-width: 0.1px;
   position: -webkit-sticky;
