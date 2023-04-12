@@ -149,6 +149,26 @@ body {
         p {
             text-align: center;
         }
+
+        h1 {
+            color: #5e5e5e;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h3 {
+            color: #5e5e5e;
+
+        }
+
+        h4 {
+            margin-top: 5px;
+            color: #797979;
+        }
+
+        h5 {
+            margin-top: 5px;
+            color: #979797;
+        }
     }
 
     #resume {
@@ -335,9 +355,9 @@ body {
 
                                     .audio-wave.playing .bar {
                                         animation: grow-shrink 1s linear infinite;
-                                      }
+                                    }
 
-                                      .audio-wave .bar {
+                                    .audio-wave .bar {
                                         width: 3px;
                                         height: 0;
                                         margin: 0 1px;
@@ -346,8 +366,8 @@ body {
                                         opacity: 0;
                                         transform-origin: bottom center;
                                         animation-play-state: paused;
-                                      }
-                                      
+                                    }
+
 
                                     @keyframes grow-shrink {
                                         0% {
@@ -394,82 +414,88 @@ body {
     }
 
     #contact {
+        // Background styles
         background-image: url(/data/imgs/Background/backgroundContact.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
 
+        // Styles for all images inside the contact section
+        img {
+            transition: transform 0.5s ease-in-out;
+
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+
+        // Styles for each section inside the contact section
         .section {
             display: table;
             margin: auto;
-            // background-color: #6565654b;
             border-radius: 3%;
+
+            // Styles for all divs inside each section
+            div {
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+
+            // Styles for images inside each section
+            img {
+                padding-right: 1em;
+                vertical-align: middle;
+                align-self: center;
+                width: 8%;
+                position: static;
+                bottom: 0;
+            }
         }
 
-        .section div {
-            padding-top: 1em;
-            padding-bottom: 1em;
-        }
-
-        .section img {
-            padding-right: 1em;
-            vertical-align: middle;
-            align-self: center;
-            width: 8%;
-            position: static;
-            bottom: 0;
-        }
-
+        // Styles for the content inside the contact section
         .content {
             display: flex;
             flex-direction: column;
+
+            // Styles for each div inside the content section
+            div {
+                display: flex;
+                flex-direction: row;
+            }
+
+            // Styles for the contact info section
+            .info {
+                display: flex;
+                flex-direction: column;
+
+                // Styles for each paragraph inside the contact info section
+                p {
+                    margin: 0;
+                    font-weight: bold;
+                }
+            }
         }
 
-        .content div {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .content .info {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .content .info p {
-            margin: 0;
-            font-weight: bold;
-        }
-
+        // Styles for the subhead inside the contact section
         .subhead {
             color: #d5bdaf;
             font-size: xx-large;
             font-weight: bold;
-            margin: auto;
             text-align: center;
             padding: 1em;
             margin: auto;
         }
 
-        .section .location .email .phone .linkedin .github {
-            display: block;
-        }
-
-        a:link {
+        // Styles for all links inside the contact section
+        a {
             color: rgb(70, 70, 70);
             background-color: transparent;
             text-decoration: none;
-        }
 
-        a:visited {
-            color: rgb(70, 70, 70);
-            background-color: transparent;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: rgb(70, 70, 70);
-            background-color: transparent;
-            font-weight: bold;
+            &:hover {
+                font-weight: bold;
+            }
         }
     }
+
 }

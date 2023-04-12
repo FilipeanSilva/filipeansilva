@@ -127,6 +127,21 @@ body {
 .main #home p {
   text-align: center;
 }
+.main #home h1 {
+  color: #5e5e5e;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.main #home h3 {
+  color: #5e5e5e;
+}
+.main #home h4 {
+  margin-top: 5px;
+  color: #797979;
+}
+.main #home h5 {
+  margin-top: 5px;
+  color: #979797;
+}
 .main #resume {
   background-image: url(/data/imgs/Background/backgroundResume.jpeg);
   background-repeat: no-repeat;
@@ -332,6 +347,12 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+.main #contact img {
+  transition: transform 0.5s ease-in-out;
+}
+.main #contact img:hover {
+  transform: rotate(360deg);
+}
 .main #contact .section {
   display: table;
   margin: auto;
@@ -369,27 +390,16 @@ body {
   color: #d5bdaf;
   font-size: xx-large;
   font-weight: bold;
-  margin: auto;
   text-align: center;
   padding: 1em;
   margin: auto;
 }
-.main #contact .section .location .email .phone .linkedin .github {
-  display: block;
-}
-.main #contact a:link {
-  color: rgb(70, 70, 70);
-  background-color: transparent;
-  text-decoration: none;
-}
-.main #contact a:visited {
+.main #contact a {
   color: rgb(70, 70, 70);
   background-color: transparent;
   text-decoration: none;
 }
 .main #contact a:hover {
-  color: rgb(70, 70, 70);
-  background-color: transparent;
   font-weight: bold;
 }
 
