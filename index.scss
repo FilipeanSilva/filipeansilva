@@ -121,11 +121,10 @@ body {
     }
 
     #home {
-        background-image: url(/data/imgs/backgroundHome.jpg);
+        background-image: url(/data/imgs/Background/backgroundHome.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-
 
         .audio-button {
             background-color: #2e4d67;
@@ -153,7 +152,7 @@ body {
     }
 
     #resume {
-        background-image: url(/data/imgs/backgroundResume.jpeg);
+        background-image: url(/data/imgs/Background/backgroundResume.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -314,7 +313,6 @@ body {
                                         margin-left: 1em;
                                     }
 
-
                                     .audio-wave {
                                         display: flex;
                                         flex-direction: row;
@@ -324,7 +322,6 @@ body {
                                         margin-left: 1em;
                                         width: 1.5em;
                                     }
-
 
                                     .audio-wave .bar {
                                         width: 3px;
@@ -352,7 +349,6 @@ body {
                                         }
                                     }
 
-
                                     .audio-wave .bar:nth-child(1) {
                                         animation: grow-shrink 1s linear infinite;
                                     }
@@ -374,7 +370,6 @@ body {
                                     }
                                 }
                             }
-
                         }
                     }
                 }
@@ -383,6 +378,11 @@ body {
     }
 
     #contact {
+        background-image: url(/data/imgs/Background/backgroundContact.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
         .section {
             display: table;
             margin: auto;
@@ -403,7 +403,6 @@ body {
             position: static;
             bottom: 0;
         }
-
 
         .content {
             display: flex;
@@ -456,6 +455,5 @@ body {
             background-color: transparent;
             font-weight: bold;
         }
-
     }
 }

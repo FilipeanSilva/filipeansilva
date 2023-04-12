@@ -102,7 +102,7 @@ body {
   height: 20%;
 }
 .main #home {
-  background-image: url(/data/imgs/backgroundHome.jpg);
+  background-image: url(/data/imgs/Background/backgroundHome.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -128,7 +128,7 @@ body {
   text-align: center;
 }
 .main #resume {
-  background-image: url(/data/imgs/backgroundResume.jpeg);
+  background-image: url(/data/imgs/Background/backgroundResume.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -313,14 +313,12 @@ body {
 .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave .bar:nth-child(5) {
   animation: grow-shrink 1s linear infinite 0.8s;
 }
-
 .main #contact {
-  background-image: url(/data/imgs/backgroundContact.jpg);
+  background-image: url(/data/imgs/Background/backgroundContact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-
 .main #contact .section {
   display: table;
   margin: auto;
