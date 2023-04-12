@@ -285,6 +285,19 @@ body {
   opacity: 0;
   transform-origin: bottom center;
 }
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave.playing .bar {
+  animation: grow-shrink 1s linear infinite;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave .bar {
+  width: 3px;
+  height: 0;
+  margin: 0 1px;
+  border-radius: 5px;
+  background-color: #2e4d67;
+  opacity: 0;
+  transform-origin: bottom center;
+  animation-play-state: paused;
+}
 @keyframes grow-shrink {
   0% {
     height: 0;
