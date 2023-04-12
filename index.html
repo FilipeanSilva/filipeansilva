@@ -1,18 +1,248 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <title> </title>
-    <!-- <style>
-      body {
-        background-color: #EDEDE9;
-      }
-    </style> -->
+<html>
 
-    <meta
-      http-equiv="refresh"
-      content="0; url=https://dr033.github.io/filipeansilva/templates/index/index.html"
-    />
-  </head>
-  <body></body>
+    <head>
+        <title>Filipe Silva</title>
+        <link rel="icon" href="/data/imgs/brainLogo.png" />
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <img src="/data/Logo/FS_Logo.png" id="logoSideBar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <!-- <li><a href="#projects">Projects</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="footer">
+                    <p>&copy; 2023 My Portofolio Website</p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="title">
+                    <h1>About me</h1>
+                </div>
+                <div id="home">
+                    <img src="/data/imgs/meSuit.png" id="meImg">
+                    <div class="text">
+                        <p>
+                            My name is Filipe Silva, I'm 25 years old, and I' am from Albufeira - Portugal,
+                            currently living in Porto - Portugal.</p>
+                        <p>
+                            I graduated in Computer Engineering and at the moment I'm working as a web developer at
+                            Adentis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <h1>Resume</h1>
+                </div>
+                <div id="resume">
+                    <div id="resumeImage">
+                        <img src="/data/imgs/meCbr.png" id="meImg">
+                    </div>
+                    <div id="resumeContent">
+                        <div id="companiesContent">
+                            <h3>Companies I have worked </h3>
+                            <div id="meeitContent">
+                                <div id="meeitImage">
+                                    <img src="data/imgs/meeit.png" alt="">
+                                </div>
+                                <div id="meeitContent">
+                                    <div class="text">
+                                        During my degree program, I completed an internship with Mee-it, where I
+                                        developed a web platform for commercializing sectional doors.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="adentisContent">
+                                <div id="adentisImage">
+                                    <img src="data/imgs/adentis.png" alt="">
+                                </div>
+                                <div id="adentisContent">
+                                    <div class="text">
+                                        I worked on a project focused on maintaining and developing
+                                        online call center software.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="languageAndEducationContent">
+                            <div id="educationContent">
+                                <div id="degree">
+                                    <h3>Degree:</h3>
+                                    <div id="degreeContent">
+                                        <img src="data/imgs/isec.png" alt="">
+                                        <div class="text">
+                                            <p>
+                                                I have a bachelor's degree at Coimbra Institute of Engineering (ISEC),
+                                                graduating in
+                                                computer engineering.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="languageAndCertifications">
+                                <div id="certificationsContent">
+                                    <h3>Certifications:</h3>
+                                    <div id="certificationsBox">
+                                        <div class="certifications">
+                                            <img src="data/imgs/nodeJs.png" alt="">
+                                            <h4>NodeJS</h4>
+                                        </div>
+                                        <div class="certifications">
+                                            <img src="data/imgs/vueJS.png" alt="">
+                                            <h4>VueJs</h4>
+                                        </div>
+                                        <div class="certifications">
+                                            <img src="data/imgs/react.png" alt="">
+                                            <h4>React native</h4>
+                                        </div>
+                                        <div class="certifications">
+                                            <img src="data/imgs/docker.png" alt="">
+                                            <h4>Docker&Kubernetes</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="languageContent">
+                                    <h3>Languages:</h3>
+                                    <div id="languagesBox">
+                                        <div class="lang">
+                                            <p>
+                                                🇵🇹 Portuguese
+                                            </p>
+                                            <div class="languagesStars">
+                                                <p>★★★★★</p>
+                                                <!-- <div class="audio-wave">
+                                                    <div class="bar"></div>
+                                                    <div class="bar"></div>
+                                                    <div class="bar"></div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="lang">
+                                            <p>
+                                                🇬🇧 English
+                                            </p>
+                                            <div class="languagesStars">
+                                                ★★★★★
+                                                <!-- <div class="audio-wave">
+                                                    <div class="bar"></div>
+                                                    <div class="bar"></div>
+                                                    <div class="bar"></div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="lang">
+                                            <p>
+                                                🇫🇷 French
+                                            </p>
+                                            <div class="languagesStars">
+                                                ★★★☆☆
+                                                <!-- <div class="audio-wave">
+                                                    <div class="bar"></div>
+                                                    <div class="bar"></div>
+                                                    <div class="bar"></div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="lang">
+                                            <p>
+                                                🇪🇸 Spanish
+                                            </p>
+                                            <div class="languagesStars">
+                                                ★★☆☆☆
+                                                <!-- <div class="audio-wave">
+                                                    <div class="bar"></div>
+                                                    <div class="bar"></div>
+                                                    <div class="bar"></div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="lang">
+                                            <p>
+                                                🇩🇪 German
+                                            </p>
+                                            <div class="languagesStars">
+                                                ★☆☆☆☆
+                                                <!-- <div class="audio-wave">
+                                                    <div class="bar"></div>
+                                                    <div class="bar"></div>
+                                                    <div class="bar"></div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="title">
+                    <h1>Projects</h1>
+                </div>
+
+                <div id="projects">
+                    <p>Working on it</p>
+                </div> -->
+
+                <div class="title">
+                    <h1>Contact</h1>
+                </div>
+
+                <div id="contact">
+                    <section class="section">
+                        <div class="content">
+                            <div class="location">
+                                <img id="location-id" src="/data/imgs/location.png" alt="location icon" />
+                                <div class="info">
+                                    <p>Location</p>
+                                    <a href="https://goo.gl/maps/34cNCZwFmkieJb728" target="_blank">Porto - Portugal</a>
+                                </div>
+                            </div>
+
+                            <div class="email">
+                                <img id="mail-id" src="/data/imgs/mail.png" alt="mail icon" />
+                                <div class="info">
+                                    <p>Email</p>
+                                    <a href="mailto:filipeansilva06@gmail.com">filipeansilva06@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="linkedin">
+                                <img id="linkedin-id" src="/data/imgs/linkedin.png" alt="linkedin icon" />
+                                <div class="info">
+                                    <p>Linkedin</p>
+                                    <a href="https://www.linkedin.com/in/filipeansilva"
+                                        target="_blank">Filipeansilva</a>
+                                </div>
+                            </div>
+
+                            <div class="github">
+                                <img id="github-id" src="/data/imgs/github.png" alt="github icon" />
+
+                                <div class="info">
+                                    <p>Github</p>
+                                    <a href="https://github.com/Dr033" target="_blank">Dr033</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+
 </html>

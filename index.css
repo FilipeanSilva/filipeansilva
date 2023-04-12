@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  overflow-y: auto;
+}
+.sidebar img#logoSideBar {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 10px;
+}
+.sidebar li {
+  margin: 10px 0;
+}
+.sidebar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+.sidebar a:hover {
+  background-color: #ddd;
+}
+.sidebar .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.main {
+  flex: 1;
+  margin-left: 200px;
+  overflow-y: auto;
+}
+.main div {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main div:target {
+  display: flex;
+}
+.main .title {
+  background-color: #333;
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: -1em;
+  margin-right: -1em;
+  height: 10vh;
+}
+.main .title h1 {
+  color: white;
+  margin: 0;
+}
+.main .text {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3em;
+  letter-spacing: 1px;
+  height: 20%;
+}
+.main #home {
+  background-image: url(/data/imgs/backgroundHome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.main #home .audio-button {
+  background-color: #2e4d67;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.main #home .text {
+  padding: 1em;
+  width: 70%;
+}
+.main #home img#meImg {
+  display: block;
+  height: 50%;
+}
+.main #home p {
+  text-align: center;
+}
+.main #resume {
+  background-image: url(/data/imgs/backgroundResume.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+}
+.main #resume #resumeImage {
+  width: 50%;
+  margin: 1em;
+}
+.main #resume #resumeImage img {
+  height: 30%;
+}
+.main #resume #resumeContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+}
+.main #resume #resumeContent #companiesContent {
+  width: 95%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main #resume #resumeContent #companiesContent h3 {
+  margin-top: 1em;
+}
+.main #resume #resumeContent #companiesContent img {
+  width: 5em;
+}
+.main #resume #resumeContent #companiesContent .text {
+  margin: 10px;
+  height: 50%;
+}
+.main #resume #resumeContent #companiesContent #meeitContent {
+  display: flex;
+  flex-direction: row;
+}
+.main #resume #resumeContent #companiesContent #adentisContent {
+  display: flex;
+  flex-direction: row;
+}
+.main #resume #resumeContent #languageAndEducationContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.main #resume #resumeContent #languageAndEducationContent img {
+  all: unset;
+  width: 7em;
+}
+.main #resume #resumeContent #languageAndEducationContent #educationContent {
+  display: flex;
+  align-items: flex-start;
+  width: 95%;
+  justify-content: flex-start;
+  height: 40%;
+}
+.main #resume #resumeContent #languageAndEducationContent #educationContent #degree {
+  display: flex;
+  align-items: flex-start;
+}
+.main #resume #resumeContent #languageAndEducationContent #educationContent #degree #degreeContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main #resume #resumeContent #languageAndEducationContent #educationContent #degree #degreeContent .text {
+  height: 50%;
+  margin: 10px;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 95%;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent {
+  display: flex;
+  align-items: flex-start;
+  width: 55%;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent #certificationsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1em;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent #certificationsBox .text {
+  height: 50%;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent #certificationsBox .certifications {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent #certificationsBox .certifications img {
+  width: 4em;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent #certificationsBox .certifications h4 {
+  margin-left: 1em;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1em;
+  width: 45%;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox {
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1em;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang p {
+  margin: 0;
+  flex: 1;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars img {
+  width: 1.5em;
+  margin-left: 1em;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 1em;
+  width: 1.5em;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave .bar {
+  width: 3px;
+  height: 0;
+  margin: 0 1px;
+  border-radius: 5px;
+  background-color: #2e4d67;
+  opacity: 0;
+  transform-origin: bottom center;
+}
+@keyframes grow-shrink {
+  0% {
+    height: 0;
+    opacity: 1;
+  }
+  50% {
+    height: 20px;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave .bar:nth-child(1) {
+  animation: grow-shrink 1s linear infinite;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave .bar:nth-child(2) {
+  animation: grow-shrink 1s linear infinite 0.2s;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave .bar:nth-child(3) {
+  animation: grow-shrink 1s linear infinite 0.4s;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave .bar:nth-child(4) {
+  animation: grow-shrink 1s linear infinite 0.6s;
+}
+.main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave .bar:nth-child(5) {
+  animation: grow-shrink 1s linear infinite 0.8s;
+}
+
+.main #contact {
+  background-image: url(/data/imgs/backgroundContact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main #contact .section {
+  display: table;
+  margin: auto;
+  border-radius: 3%;
+}
+.main #contact .section div {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.main #contact .section img {
+  padding-right: 1em;
+  vertical-align: middle;
+  align-self: center;
+  width: 8%;
+  position: static;
+  bottom: 0;
+}
+.main #contact .content {
+  display: flex;
+  flex-direction: column;
+}
+.main #contact .content div {
+  display: flex;
+  flex-direction: row;
+}
+.main #contact .content .info {
+  display: flex;
+  flex-direction: column;
+}
+.main #contact .content .info p {
+  margin: 0;
+  font-weight: bold;
+}
+.main #contact .subhead {
+  color: #d5bdaf;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  padding: 1em;
+  margin: auto;
+}
+.main #contact .section .location .email .phone .linkedin .github {
+  display: block;
+}
+.main #contact a:link {
+  color: rgb(70, 70, 70);
+  background-color: transparent;
+  text-decoration: none;
+}
+.main #contact a:visited {
+  color: rgb(70, 70, 70);
+  background-color: transparent;
+  text-decoration: none;
+}
+.main #contact a:hover {
+  color: rgb(70, 70, 70);
+  background-color: transparent;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=index.css.map */
