@@ -123,21 +123,24 @@ body {
     h1 {
         color: #5e5e5e;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
     }
 
     h3 {
         color: #5e5e5e;
-
+        text-align: center;
     }
 
     h4 {
         margin-top: 5px;
         color: #797979;
+        text-align: center;
     }
 
     h5 {
         margin-top: 5px;
         color: #979797;
+        text-align: center;
     }
 
     #home {
@@ -502,4 +505,38 @@ body {
         }
     }
 
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        width: 100%;
+        margin: 0;
+
+        #resume {
+            #resumeImage {
+                display: none;
+            }
+
+            #resumeContent {
+                width: 100%;
+                margin: 1em;
+
+                #languageAndEducationContent {
+                    #languageAndCertifications {
+                        #certificationsBox {
+                            .certifications {
+                                img {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar {
+        display: none;
+    }
 }

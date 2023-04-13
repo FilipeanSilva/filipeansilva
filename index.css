@@ -104,17 +104,21 @@ body {
 .main h1 {
   color: #5e5e5e;
   font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
 }
 .main h3 {
   color: #5e5e5e;
+  text-align: center;
 }
 .main h4 {
   margin-top: 5px;
   color: #797979;
+  text-align: center;
 }
 .main h5 {
   margin-top: 5px;
   color: #979797;
+  text-align: center;
 }
 .main #home {
   background-image: url(/data/imgs/Background/backgroundHome.jpg);
@@ -404,6 +408,26 @@ body {
 }
 .main #contact a:hover {
   font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+  .main #resume #resumeImage {
+    display: none;
+  }
+  .main #resume #resumeContent {
+    width: 100%;
+    margin: 1em;
+  }
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsBox .certifications img {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
