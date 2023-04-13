@@ -169,7 +169,7 @@ body {
 }
 .main #resume #resumeContent #companiesContent {
   width: 95%;
-  height: 50%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -217,6 +217,8 @@ body {
 .main #resume #resumeContent #languageAndEducationContent #educationContent #degree {
   display: flex;
   align-items: flex-start;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 .main #resume #resumeContent #languageAndEducationContent #educationContent #degree #degreeContent {
   display: flex;
@@ -231,6 +233,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   width: 95%;
+  height: 70%;
 }
 .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent {
   display: flex;
