@@ -231,7 +231,7 @@ body {
 .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent {
   display: flex;
   align-items: flex-start;
-  width: 55%;
+  width: 50%;
 }
 .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent #certificationsBox {
   display: flex;
