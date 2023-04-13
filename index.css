@@ -101,6 +101,21 @@ body {
   letter-spacing: 1px;
   height: 20%;
 }
+.main h1 {
+  color: #5e5e5e;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.main h3 {
+  color: #5e5e5e;
+}
+.main h4 {
+  margin-top: 5px;
+  color: #797979;
+}
+.main h5 {
+  margin-top: 5px;
+  color: #979797;
+}
 .main #home {
   background-image: url(/data/imgs/Background/backgroundHome.jpg);
   background-repeat: no-repeat;
@@ -127,21 +142,6 @@ body {
 .main #home p {
   text-align: center;
 }
-.main #home h1 {
-  color: #5e5e5e;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.main #home h3 {
-  color: #5e5e5e;
-}
-.main #home h4 {
-  margin-top: 5px;
-  color: #797979;
-}
-.main #home h5 {
-  margin-top: 5px;
-  color: #979797;
-}
 .main #resume {
   background-image: url(/data/imgs/Background/backgroundResume.jpeg);
   background-repeat: no-repeat;
@@ -151,11 +151,11 @@ body {
   flex-direction: row;
 }
 .main #resume #resumeImage {
-  width: 50%;
+  width: 30%;
   margin: 1em;
 }
 .main #resume #resumeImage img {
-  height: 30%;
+  height: 50%;
 }
 .main #resume #resumeContent {
   display: flex;
@@ -172,6 +172,10 @@ body {
 }
 .main #resume #resumeContent #companiesContent h3 {
   margin-top: 1em;
+}
+.main #resume #resumeContent #companiesContent h5 {
+  height: 50%;
+  margin-left: 2em;
 }
 .main #resume #resumeContent #companiesContent img {
   width: 5em;
@@ -197,7 +201,7 @@ body {
 }
 .main #resume #resumeContent #languageAndEducationContent img {
   all: unset;
-  width: 7em;
+  width: 5em;
 }
 .main #resume #resumeContent #languageAndEducationContent #educationContent {
   display: flex;
@@ -215,9 +219,8 @@ body {
   flex-direction: row;
   align-items: center;
 }
-.main #resume #resumeContent #languageAndEducationContent #educationContent #degree #degreeContent .text {
-  height: 50%;
-  margin: 10px;
+.main #resume #resumeContent #languageAndEducationContent #educationContent #degree #degreeContent h5 {
+  margin-left: 2em;
 }
 .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications {
   display: flex;
