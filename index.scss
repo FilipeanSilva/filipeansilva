@@ -236,32 +236,26 @@ body {
                 height: 40%;
 
                 img {
-                    width: 5em;
+                    width: 7em;
                 }
 
                 #content {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    align-items: center;
+                    align-items: flex-start;
                     width: 100%;
+
+                    transition: all 0.5s ease-in-out;
+
 
                     #meeitContent {
                         display: flex;
                         flex-direction: row;
 
-                        img {
-                            position: relative;
-                            left: 0;
-                            transition: all 2s ease;
+                        &:hover {
+                            opacity: 0.7;
                         }
-
-                        // #meeitText {
-                        //     position: relative;
-                        //     display: inline;
-                        //     opacity: 0;
-                        //     transition: all 5s ease;
-                        // }
                     }
 
 
@@ -269,17 +263,12 @@ body {
                         display: flex;
                         flex-direction: row;
 
-                        img {
-                            position: relative;
-                            left: 0;
-                            transition: all 2s ease;
+                        &:hover {
+                            opacity: 0.7;
                         }
                     }
                 }
             }
-
-
-
 
             #languageAndEducationContent {
                 display: flex;
@@ -290,7 +279,7 @@ body {
 
                 img {
                     all: unset;
-                    width: 5em;
+                    width: 7em;
                 }
 
                 #educationContent {
@@ -298,13 +287,11 @@ body {
                     align-items: flex-start;
                     width: 95%;
                     justify-content: flex-start;
-                    height: 40%;
+                    height: 30%;
 
                     #degree {
                         display: flex;
                         align-items: flex-start;
-                        margin-top: 2em;
-                        margin-bottom: 2em;
 
                         #degreeContent {
                             display: flex;
@@ -314,6 +301,10 @@ body {
                             h5 {
                                 margin-left: 2em;
                             }
+
+                            &:hover {
+                                opacity: 0.7;
+                            }
                         }
                     }
                 }
@@ -321,7 +312,7 @@ body {
                 #languageAndCertifications {
                     display: flex;
                     flex-direction: row;
-                    justify-content: flex-start;
+                    justify-content: space-between;
                     width: 95%;
                     height: 70%;
 
@@ -373,6 +364,7 @@ body {
                                 width: 100%;
                                 display: flex;
                                 flex-direction: row;
+                                margin: 0 0 0 2px;
 
                                 &:hover {
                                     opacity: 0.7;
@@ -380,7 +372,6 @@ body {
                                 }
 
                                 p {
-                                    margin: 0;
                                     flex: 1;
                                 }
 
@@ -500,6 +491,9 @@ body {
         .content {
             display: flex;
             flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
 
             div {
                 display: flex;
@@ -557,22 +551,56 @@ body {
                 width: 100%;
                 margin: 1em 0 0 10%;
 
+                h5 {
+                    margin-top: 0;
+                }
+
+                #companiesContent {
+                    align-items: center;
+                    justify-content: center;
+
+                    #content {
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.5s ease-in-out;
+
+
+                        h5 {
+                            display: none !important;
+                            transition: all 0.5s ease-in-out;
+                        }
+                    }
+                }
+
+                #degree {
+                    width: 100%;
+                    align-items: center !important;
+                    justify-content: center;
+
+                    h5 {
+                        display: none !important;
+                    }
+                }
+
                 #languageAndEducationContent {
                     #languageAndCertifications {
                         margin-bottom: 1em;
+                        justify-content: space-around;
 
                         #languageContent {
                             margin-left: 5px !important;
+                            justify-content: center;
+                            align-items: center;
 
                             #languagesBox {
                                 .lang {
+                                    p {
+                                        display: none;
+                                    }
+
                                     .languagesStars {
                                         margin-left: 2px;
                                         width: 30%;
-
-                                        p {
-                                            display: none;
-                                        }
 
                                         &:before {
                                             content: attr(data-rating) "/5";
@@ -588,14 +616,36 @@ body {
                             }
                         }
 
-                        #certificationsBox {
-                            .certifications {
-                                img {
-                                    display: none;
+                        #certificationsContent {
+                            align-items: center;
+                            justify-content: center;
+
+                            width: auto;
+
+                            #certificationsBox {
+                                align-items: center;
+                                justify-content: center;
+
+                                .certifications {
+                                    h4 {
+                                        display: none;
+                                    }
                                 }
                             }
                         }
                     }
+                }
+            }
+        }
+
+        #contact{
+            .section{
+                .content{
+                    font-size: 1.2em;
+                }
+
+                img{
+                    width: 3em;
                 }
             }
         }
@@ -650,16 +700,6 @@ body {
                     cursor: pointer;
                 }
             }
-        }
-
-        .burger-menu {
-            display: inline !important;
-            top: 10px;
-            font-size: 32px;
-            background-color: transparent;
-            border: none;
-            color: #333;
-            cursor: pointer;
         }
     }
 }

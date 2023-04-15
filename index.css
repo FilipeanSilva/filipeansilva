@@ -102,8 +102,14 @@ body {
 .main .title {
   background-color: #747475;
   margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-left: -1em;
   margin-right: -1em;
@@ -197,32 +203,29 @@ body {
   height: 40%;
 }
 .main #resume #resumeContent #companiesContent img {
-  width: 5em;
+  width: 7em;
 }
 .main #resume #resumeContent #companiesContent #content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
+  transition: all 0.5s ease-in-out;
 }
 .main #resume #resumeContent #companiesContent #content #meeitContent {
   display: flex;
   flex-direction: row;
 }
-.main #resume #resumeContent #companiesContent #content #meeitContent img {
-  position: relative;
-  left: 0;
-  transition: all 2s ease;
+.main #resume #resumeContent #companiesContent #content #meeitContent:hover {
+  opacity: 0.7;
 }
 .main #resume #resumeContent #companiesContent #content #adentisContent {
   display: flex;
   flex-direction: row;
 }
-.main #resume #resumeContent #companiesContent #content #adentisContent img {
-  position: relative;
-  left: 0;
-  transition: all 2s ease;
+.main #resume #resumeContent #companiesContent #content #adentisContent:hover {
+  opacity: 0.7;
 }
 .main #resume #resumeContent #languageAndEducationContent {
   display: flex;
@@ -233,20 +236,18 @@ body {
 }
 .main #resume #resumeContent #languageAndEducationContent img {
   all: unset;
-  width: 5em;
+  width: 7em;
 }
 .main #resume #resumeContent #languageAndEducationContent #educationContent {
   display: flex;
   align-items: flex-start;
   width: 95%;
   justify-content: flex-start;
-  height: 40%;
+  height: 30%;
 }
 .main #resume #resumeContent #languageAndEducationContent #educationContent #degree {
   display: flex;
   align-items: flex-start;
-  margin-top: 2em;
-  margin-bottom: 2em;
 }
 .main #resume #resumeContent #languageAndEducationContent #educationContent #degree #degreeContent {
   display: flex;
@@ -256,10 +257,13 @@ body {
 .main #resume #resumeContent #languageAndEducationContent #educationContent #degree #degreeContent h5 {
   margin-left: 2em;
 }
+.main #resume #resumeContent #languageAndEducationContent #educationContent #degree #degreeContent:hover {
+  opacity: 0.7;
+}
 .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 95%;
   height: 70%;
 }
@@ -305,13 +309,13 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  margin: 0 0 0 2px;
 }
 .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang p {
-  margin: 0;
   flex: 1;
 }
 .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars {
@@ -405,6 +409,9 @@ body {
 .main #contact .content {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .main #contact .content div {
   display: flex;
@@ -447,18 +454,45 @@ body {
     width: 100%;
     margin: 1em 0 0 10%;
   }
+  .main #resume #resumeContent h5 {
+    margin-top: 0;
+  }
+  .main #resume #resumeContent #companiesContent {
+    align-items: center;
+    justify-content: center;
+  }
+  .main #resume #resumeContent #companiesContent #content {
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .main #resume #resumeContent #companiesContent #content h5 {
+    display: none !important;
+    transition: all 0.5s ease-in-out;
+  }
+  .main #resume #resumeContent #degree {
+    width: 100%;
+    align-items: center !important;
+    justify-content: center;
+  }
+  .main #resume #resumeContent #degree h5 {
+    display: none !important;
+  }
   .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications {
     margin-bottom: 1em;
+    justify-content: space-around;
   }
   .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent {
     margin-left: 5px !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang p {
+    display: none;
   }
   .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars {
     margin-left: 2px;
     width: 30%;
-  }
-  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars p {
-    display: none;
   }
   .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars:before {
     content: attr(data-rating) "/5";
@@ -468,8 +502,23 @@ body {
   .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave {
     margin-left: 2px;
   }
-  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsBox .certifications img {
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent #certificationsBox {
+    align-items: center;
+    justify-content: center;
+  }
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent #certificationsBox .certifications h4 {
     display: none;
+  }
+  .main #contact .section .content {
+    font-size: 1.2em;
+  }
+  .main #contact .section img {
+    width: 3em;
   }
   .sidebar {
     position: absolute;
@@ -515,13 +564,6 @@ body {
     opacity: 0.7;
     cursor: pointer;
   }
-  .sidebar .burger-menu {
-    display: inline !important;
-    top: 10px;
-    font-size: 32px;
-    background-color: transparent;
-    border: none;
-    color: #333;
-    cursor: pointer;
-  }
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */

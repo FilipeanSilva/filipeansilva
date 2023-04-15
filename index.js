@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('#big-sidebar a');
+  const links = document.querySelectorAll('#big-sidebar li');
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // meeitContent.addEventListener('mouseover', () => {
   //   meeitImage.style.left = '0% ';
-    
+
   //   meeitText.style.display = 'initial';
   //   meeitText.style.opacity = '1';
   // });
@@ -107,7 +107,6 @@ function isIOS() {
 
   if (isIOS) {
     const elems = document.querySelectorAll('#home, #resume, #contact');
-    console.log(elems);
     elems.forEach((elem) => {
       elem.style.backgroundAttachment = 'scroll';
     });
