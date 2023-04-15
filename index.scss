@@ -508,6 +508,10 @@ body {
         margin: 0;
         width: 100%;
         overflow-y: auto;
+        
+        h5{
+            width: 70%;
+        }
 
         #resume {
             #resumeImage {
@@ -520,6 +524,31 @@ body {
 
                 #languageAndEducationContent {
                     #languageAndCertifications {
+
+                        #languageContent {
+                            margin-left: 5px !important;
+                            #languagesBox {
+                                .lang {
+                                    .languagesStars {
+                                        margin-left: 2px;
+                                        width: 30%;
+                                        p {
+                                            display: none;
+                                        }
+
+                                        &:before {
+                                            content: attr(data-rating) "/5";
+                                            font-weight: bold;
+                                            margin-right: 0.5em;
+                                        }
+                                        .audio-wave{
+                                            margin-left: 2px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
                         #certificationsBox {
                             .certifications {
                                 img {

@@ -429,12 +429,33 @@ body {
     width: 100%;
     overflow-y: auto;
   }
+  .main h5 {
+    width: 70%;
+  }
   .main #resume #resumeImage {
     display: none;
   }
   .main #resume #resumeContent {
     width: 100%;
     margin: 1em 0 0 10%;
+  }
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent {
+    margin-left: 5px !important;
+  }
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars {
+    margin-left: 2px;
+    width: 30%;
+  }
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars p {
+    display: none;
+  }
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars:before {
+    content: attr(data-rating) "/5";
+    font-weight: bold;
+    margin-right: 0.5em;
+  }
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent #languagesBox .lang .languagesStars .audio-wave {
+    margin-left: 2px;
   }
   .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsBox .certifications img {
     display: none;
