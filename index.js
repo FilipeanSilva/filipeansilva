@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const homeLink = document.querySelector('a[href="#home"]');
   const audioWave = document.querySelector('.audio-wave');
 
-  homeLink.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
+  const links = document.querySelectorAll('#big-sidebar a');
+  links.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const href = '#' + link.getAttribute('id').replace('-link', '');
+      scrollToSection(href);
     });
   });
+  
 
   setTimeout(() => {
     const bars = document.querySelectorAll('.audio-wave .bar');
@@ -54,4 +56,9 @@ function togglePlay(language) {
       bars.forEach((bar) => (bar.style.animationPlayState = 'paused'));
     }
   }
+}
+
+function scrollToSection(id) {
+  var section = document.querySelector(id);
+  section.scrollIntoView({ behavior: 'smooth' });
 }

@@ -11,17 +11,26 @@
     <body>
         <div class="container">
             <div class="sidebar">
+                <!-- <button class="burger-menu">&#9776;</button> -->
                 <img src="/data/imgs/Logo/FS_Logo.png" id="logoSideBar">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <!-- <li><a href="#projects">Projects</a></li> -->
-                    <li><a href="#contact">Contact</a></li>
+                <div id="small-sidebar">
+                    <img src="data/imgs/Sidebar/home.png" alt="" onclick="scrollToSection('#home')">
+                    <img src="data/imgs/Sidebar/resume.png" alt="" onclick="scrollToSection('#resume')">
+                    <img src="data/imgs/Sidebar/contact.png" alt="" onclick="scrollToSection('#contact')">
+                </div>
+
+                <ul id="big-sidebar">
+                    <li><img src="data/imgs/Sidebar/home.png" alt=""><a id="home-link">Home</a></li>
+                    <li><img src="data/imgs/Sidebar/resume.png" alt=""><a id="resume-link">Resume</a></li>
+                    <!-- <li><a id="projects-link">Projects</a></li> -->
+                    <li><img src="data/imgs/Sidebar/contact.png" alt=""><a id="contact-link">Contact</a></li>
                 </ul>
+
                 <div class="footer">
                     <p>&copy; 2023 My Portofolio Website</p>
                 </div>
             </div>
+
             <div class="main">
                 <div class="title">
                     <h1>About me</h1>

@@ -19,6 +19,7 @@ html {
 body {
     font-family: $font-family_1;
     scroll-behavior: smooth;
+    background-color: $background-color_1;
 }
 
 .container {
@@ -34,6 +35,9 @@ body {
     width: 200px;
     background-color: $background-color_1;
     overflow-y: auto;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    transform-origin: center center;
 
     img#logoSideBar {
         display: block;
@@ -41,23 +45,44 @@ body {
         width: 90%;
     }
 
-    ul {
+    #big-sidebar {
         list-style: none;
-        padding: 10px;
+        margin-top: 3em;
+        margin-left: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+
+            &:hover {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+            img {
+                width: 20%;
+                margin-right: 1em;
+            }
+
+            a {
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                color: $color_1;
+            }
+        }
     }
 
-    li {
-        margin: 10px 0;
-    }
+    #small-sidebar {
+        display: none;
 
-    a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: $color_1;
-
-        &:hover {
-            background-color: $background-color_2;
+        img {
+            width: 20%;
         }
     }
 
@@ -71,7 +96,12 @@ body {
         padding: 10px;
         text-align: center;
     }
+
+    .burger-menu {
+        display: none;
+    }
 }
+
 
 .main {
     flex: 1;
@@ -258,6 +288,7 @@ body {
                         align-items: flex-start;
                         margin-top: 2em;
                         margin-bottom: 2em;
+
                         #degreeContent {
                             display: flex;
                             flex-direction: row;
@@ -510,9 +541,13 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+
     .main {
-        width: 100%;
         margin: 0;
+
+        width: 100%;
+        overflow-y: auto;
+
 
         #resume {
             #resumeImage {
@@ -521,7 +556,8 @@ body {
 
             #resumeContent {
                 width: 100%;
-                margin: 1em;
+                margin: 1em 0 0 7%;
+
 
                 #languageAndEducationContent {
                     #languageAndCertifications {
@@ -539,6 +575,60 @@ body {
     }
 
     .sidebar {
-        display: none;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        width: 5%;
+        height: 30%;
+        border-radius: 3em;
+        transition: all 5s ease-in-out;
+        transform-origin: center center;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            display: none !important;
+        }
+
+        ul {
+            display: none !important;
+        }
+
+        .footer {
+            display: none !important;
+        }
+
+        #small-sidebar {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                display: flex !important;
+                width: 80%;
+                margin: 1em 0 1em 0;
+
+                &:hover {
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .burger-menu {
+            display: inline !important;
+            top: 10px;
+            font-size: 32px;
+            /* Increase the font size to make the button more visible */
+            background-color: transparent;
+            border: none;
+            color: $color_1;
+            cursor: pointer;
+        }
     }
 }
