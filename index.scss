@@ -1,11 +1,4 @@
-$color_1: #333;
-$color_2: #fff;
-$font-family_1: Arial,
-sans-serif;
-$background-color_1: #f1f1f1;
-$background-color_2: #ddd;
-$background-color_3: #333;
-
+/*# sourceMappingURL=index.css.map */
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +10,9 @@ html {
 }
 
 body {
-    font-family: $font-family_1;
+    font-family: Arial, sans-serif;
     scroll-behavior: smooth;
-    background-color: $background-color_1;
+    background-color: #f1f1f1;
 }
 
 .container {
@@ -33,7 +26,7 @@ body {
     top: 0;
     bottom: 0;
     width: 200px;
-    background-color: $background-color_1;
+    background-color: #f1f1f1;
     overflow-y: auto;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
@@ -73,7 +66,7 @@ body {
                 display: block;
                 padding: 10px;
                 text-decoration: none;
-                color: $color_1;
+                color: #333;
             }
         }
     }
@@ -91,8 +84,8 @@ body {
         bottom: 0;
         width: 100%;
         height: 8%;
-        background-color: $background-color_3;
-        color: $color_2;
+        background-color: #333;
+        color: #fff;
         padding: 10px;
         text-align: center;
     }
@@ -101,7 +94,6 @@ body {
         display: none;
     }
 }
-
 
 .main {
     flex: 1;
@@ -121,7 +113,7 @@ body {
     }
 
     .title {
-        background-color: $background-color_3;
+        background-color: #333;
         margin-top: 0;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -152,7 +144,7 @@ body {
 
     h1 {
         color: #5e5e5e;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: Georgia, "Times New Roman", Times, serif;
         text-align: center;
     }
 
@@ -209,7 +201,6 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-
         display: flex;
         flex-direction: row;
 
@@ -368,47 +359,6 @@ body {
                                     flex-direction: row;
                                     justify-content: flex-start;
 
-                                    img {
-                                        width: 1.5em;
-                                        margin-left: 1em;
-                                    }
-
-                                    .audio-wave {
-                                        display: flex;
-                                        flex-direction: row;
-                                        justify-content: center;
-                                        align-items: center;
-                                        width: 100%;
-                                        margin-left: 1em;
-                                        width: 1.5em;
-                                    }
-
-                                    .audio-wave .bar {
-                                        width: 3px;
-                                        height: 0;
-                                        margin: 0 1px;
-                                        border-radius: 5px;
-                                        background-color: #2e4d67;
-                                        opacity: 0;
-                                        transform-origin: bottom center;
-                                    }
-
-                                    .audio-wave.playing .bar {
-                                        animation: grow-shrink 1s linear infinite;
-                                    }
-
-                                    .audio-wave .bar {
-                                        width: 3px;
-                                        height: 0;
-                                        margin: 0 1px;
-                                        border-radius: 5px;
-                                        background-color: #2e4d67;
-                                        opacity: 0;
-                                        transform-origin: bottom center;
-                                        animation-play-state: paused;
-                                    }
-
-
                                     @keyframes grow-shrink {
                                         0% {
                                             height: 0;
@@ -425,24 +375,63 @@ body {
                                         }
                                     }
 
-                                    .audio-wave .bar:nth-child(1) {
-                                        animation: grow-shrink 1s linear infinite;
+                                    img {
+                                        width: 1.5em;
+                                        margin-left: 1em;
                                     }
 
-                                    .audio-wave .bar:nth-child(2) {
-                                        animation: grow-shrink 1s linear infinite 0.2s;
+                                    .audio-wave {
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 100%;
+                                        margin-left: 1em;
+                                        width: 1.5em;
+
+                                        .bar {
+                                            width: 3px;
+                                            height: 0;
+                                            margin: 0 1px;
+                                            border-radius: 5px;
+                                            background-color: #2e4d67;
+                                            opacity: 0;
+                                            transform-origin: bottom center;
+                                            width: 3px;
+                                            height: 0;
+                                            margin: 0 1px;
+                                            border-radius: 5px;
+                                            background-color: #2e4d67;
+                                            opacity: 0;
+                                            transform-origin: bottom center;
+                                            animation-play-state: paused;
+
+                                            &:nth-child(1) {
+                                                animation: grow-shrink 1s linear infinite;
+                                            }
+
+                                            &:nth-child(2) {
+                                                animation: grow-shrink 1s linear infinite 0.2s;
+                                            }
+
+                                            &:nth-child(3) {
+                                                animation: grow-shrink 1s linear infinite 0.4s;
+                                            }
+
+                                            &:nth-child(4) {
+                                                animation: grow-shrink 1s linear infinite 0.6s;
+                                            }
+
+                                            &:nth-child(5) {
+                                                animation: grow-shrink 1s linear infinite 0.8s;
+                                            }
+                                        }
                                     }
 
-                                    .audio-wave .bar:nth-child(3) {
-                                        animation: grow-shrink 1s linear infinite 0.4s;
-                                    }
-
-                                    .audio-wave .bar:nth-child(4) {
-                                        animation: grow-shrink 1s linear infinite 0.6s;
-                                    }
-
-                                    .audio-wave .bar:nth-child(5) {
-                                        animation: grow-shrink 1s linear infinite 0.8s;
+                                    .audio-wave.playing {
+                                        .bar {
+                                            animation: grow-shrink 1s linear infinite;
+                                        }
                                     }
                                 }
                             }
@@ -454,34 +443,21 @@ body {
     }
 
     #contact {
-        // Background styles
         background-image: url(/data/imgs/Background/backgroundContact.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
 
-        // Styles for all images inside the contact section
-        img {
-            transition: transform 0.5s ease-in-out;
-
-            &:hover {
-                transform: rotate(360deg);
-            }
-        }
-
-        // Styles for each section inside the contact section
         .section {
             display: table;
             margin: auto;
             border-radius: 3%;
 
-            // Styles for all divs inside each section
             div {
                 padding-top: 1em;
                 padding-bottom: 1em;
             }
 
-            // Styles for images inside each section
             img {
                 padding-right: 1em;
                 vertical-align: middle;
@@ -492,23 +468,30 @@ body {
             }
         }
 
-        // Styles for the content inside the contact section
         .content {
             display: flex;
             flex-direction: column;
 
-            // Styles for each div inside the content section
             div {
                 display: flex;
                 flex-direction: row;
+
+                &:hover {
+                    img {
+                        transition: transform 1s ease;
+                        transform: scale(1.5);
+                    }
+
+                    a {
+                        font-weight: bold;
+                    }
+                }
             }
 
-            // Styles for the contact info section
             .info {
                 display: flex;
                 flex-direction: column;
 
-                // Styles for each paragraph inside the contact info section
                 p {
                     margin: 0;
                     font-weight: bold;
@@ -516,38 +499,19 @@ body {
             }
         }
 
-        // Styles for the subhead inside the contact section
-        .subhead {
-            color: #d5bdaf;
-            font-size: xx-large;
-            font-weight: bold;
-            text-align: center;
-            padding: 1em;
-            margin: auto;
-        }
-
-        // Styles for all links inside the contact section
         a {
             color: rgb(70, 70, 70);
             background-color: transparent;
             text-decoration: none;
-
-            &:hover {
-                font-weight: bold;
-            }
         }
     }
-
 }
 
 @media screen and (max-width: 900px) {
-
     .main {
         margin: 0;
-
         width: 100%;
         overflow-y: auto;
-
 
         #resume {
             #resumeImage {
@@ -557,7 +521,6 @@ body {
             #resumeContent {
                 width: 100%;
                 margin: 1em 0 0 7%;
-
 
                 #languageAndEducationContent {
                     #languageAndCertifications {
@@ -582,7 +545,7 @@ body {
         width: 5%;
         height: 30%;
         border-radius: 3em;
-        transition: all 5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         transform-origin: center center;
         z-index: 10;
         display: flex;
@@ -624,10 +587,9 @@ body {
             display: inline !important;
             top: 10px;
             font-size: 32px;
-            /* Increase the font size to make the button more visible */
             background-color: transparent;
             border: none;
-            color: $color_1;
+            color: #333;
             cursor: pointer;
         }
     }
