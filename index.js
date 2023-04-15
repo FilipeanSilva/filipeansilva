@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
   addLinkBehavior('meeitContent', 'https://www.mee-it.pt');
   addLinkBehavior('adentisContent', 'https://www.adentis.pt/');
   addLinkBehavior('degreeContent', 'https://www.isec.pt/EN/');
+
+  isIOS();
 });
 
 function addLinkBehavior(elementId, link) {
@@ -79,3 +81,17 @@ const isMobile = () => {
   console.log('isMobile: ', isMobile);
   return isMobile;
 };
+
+function isIOS() {
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  console.log(`Is iOS? ${isIOS ? 'Yes' : 'No'}`);
+  
+  if (isIOS) {
+    const elems = document.querySelectorAll('#home, #resume, #contact');
+    console.log(elems);
+    elems.forEach((elem) => {
+      elem.style.backgroundAttachment = 'scroll';
+    });
+  }
+}
+

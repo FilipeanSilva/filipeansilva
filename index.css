@@ -214,6 +214,7 @@ body {
 .main #resume #resumeContent #companiesContent #adentisContent {
   display: flex;
   flex-direction: row;
+  margin-top: 1em;
 }
 .main #resume #resumeContent #languageAndEducationContent {
   display: flex;
@@ -429,7 +430,7 @@ body {
     width: 100%;
     overflow-y: auto;
   }
-  .main h5 {
+  .main #home h5 {
     width: 70%;
   }
   .main #resume #resumeImage {
@@ -438,6 +439,9 @@ body {
   .main #resume #resumeContent {
     width: 100%;
     margin: 1em 0 0 10%;
+  }
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications {
+    margin-bottom: 1em;
   }
   .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #languageContent {
     margin-left: 5px !important;
