@@ -12,7 +12,7 @@ html {
 body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
-  background-color: #f1f1f1;
+  background-color: #F2F2F4;
 }
 
 .container {
@@ -26,8 +26,8 @@ body {
   top: 0;
   bottom: 0;
   width: 200px;
-  background-color: #f1f1f1;
-  border: 1px solid #333;
+  background-color: #F2F2F4;
+  border: 1px solid #D9D9DB;
   overflow-y: auto;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
@@ -51,9 +51,11 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 1em;
+  width: 100%;
 }
 .sidebar #big-sidebar li:hover {
   opacity: 0.7;
+  background-color: #D9D9DB;
   cursor: pointer;
 }
 .sidebar #big-sidebar li img {
@@ -64,8 +66,6 @@ body {
 .sidebar #big-sidebar li a {
   display: block;
   padding: 10px;
-  text-decoration: none;
-  color: #333;
 }
 .sidebar #small-sidebar {
   display: none;
@@ -78,13 +78,10 @@ body {
   bottom: 0;
   width: 100%;
   height: 8%;
-  background-color: #333;
-  color: #fff;
+  background-color: #747475;
+  color: #F2F2F4;
   padding: 10px;
   text-align: center;
-}
-.sidebar .burger-menu {
-  display: none;
 }
 
 .main {
@@ -103,56 +100,52 @@ body {
   display: flex;
 }
 .main .title {
-  background-color: #333;
+  background-color: #747475;
   margin-top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-left: -1em;
   margin-right: -1em;
   height: 10vh;
 }
 .main .title h1 {
-  color: white;
+  color: #F2F2F4;
   margin: 0;
 }
-.main .text {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 3em;
-  letter-spacing: 1px;
-  height: 20%;
-}
 .main h1 {
-  color: #5e5e5e;
+  color: #F2F2F4;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
 }
 .main h3 {
-  color: #5e5e5e;
+  color: #D9D9DB;
   text-align: center;
 }
 .main h4 {
   margin-top: 5px;
-  color: #797979;
+  color: #B3B3B5;
   text-align: center;
 }
 .main h5 {
   margin-top: 5px;
-  color: #979797;
+  color: #747475;
   text-align: center;
 }
 .main #home {
-  background-image: url(/data/imgs/Background/backgroundHome.jpg);
+  background-image: url(/data/imgs/Background/home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+.main #home h1 {
+  color: #B3B3B5;
+}
+.main #home h3 {
+  color: #D9D9DB;
+}
+.main #home h4 {
+  color: #747475;
 }
 .main #home .text {
   padding: 1em;
@@ -166,7 +159,7 @@ body {
   text-align: center;
 }
 .main #resume {
-  background-image: url(/data/imgs/Background/backgroundResume.jpeg);
+  background-image: url(/data/imgs/Background/resume.avif);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -186,35 +179,50 @@ body {
   height: 100%;
   align-items: flex-start;
 }
-.main #resume #resumeContent #companiesContent {
-  width: 95%;
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.main #resume #resumeContent #companiesContent h3 {
+.main #resume #resumeContent h3 {
+  color: #747475;
   margin-top: 1em;
 }
-.main #resume #resumeContent #companiesContent h5 {
+.main #resume #resumeContent h5 {
+  color: #B3B3B5;
   height: 50%;
   margin-left: 2em;
+}
+.main #resume #resumeContent #companiesContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 95%;
+  height: 40%;
 }
 .main #resume #resumeContent #companiesContent img {
   width: 5em;
 }
-.main #resume #resumeContent #companiesContent .text {
-  margin: 10px;
-  height: 50%;
+.main #resume #resumeContent #companiesContent #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-.main #resume #resumeContent #companiesContent #meeitContent {
+.main #resume #resumeContent #companiesContent #content #meeitContent {
   display: flex;
   flex-direction: row;
 }
-.main #resume #resumeContent #companiesContent #adentisContent {
+.main #resume #resumeContent #companiesContent #content #meeitContent img {
+  position: relative;
+  left: 0;
+  transition: all 2s ease;
+}
+.main #resume #resumeContent #companiesContent #content #adentisContent {
   display: flex;
   flex-direction: row;
-  margin-top: 1em;
+}
+.main #resume #resumeContent #companiesContent #content #adentisContent img {
+  position: relative;
+  left: 0;
+  transition: all 2s ease;
 }
 .main #resume #resumeContent #languageAndEducationContent {
   display: flex;
@@ -342,7 +350,6 @@ body {
   height: 0;
   margin: 0 1px;
   border-radius: 5px;
-  background-color: #2e4d67;
   opacity: 0;
   transform-origin: bottom center;
   width: 3px;
@@ -517,6 +524,4 @@ body {
     color: #333;
     cursor: pointer;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

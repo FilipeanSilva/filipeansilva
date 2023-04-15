@@ -8,6 +8,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // const meeitContent = document.querySelector('#meeitContent');
+  // const meeitImage = document.querySelector('#meeitImage img');
+  // const meeitText = document.querySelector('#meeitText');
+
+  // meeitContent.addEventListener('mouseover', () => {
+  //   meeitImage.style.left = '0% ';
+    
+  //   meeitText.style.display = 'initial';
+  //   meeitText.style.opacity = '1';
+  // });
+
+  // meeitContent.addEventListener('mouseout', () => {
+  //   meeitImage.style.left = '50%';
+
+  //   meeitText.style.display = 'none';
+  //   meeitText.style.opacity = '0';
+  // });
+
   const audioWave = document.querySelector('.audio-wave');
   setTimeout(() => {
     const bars = document.querySelectorAll('.audio-wave .bar');
@@ -83,9 +101,10 @@ const isMobile = () => {
 };
 
 function isIOS() {
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  const isIOS =
+    /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   console.log(`Is iOS? ${isIOS ? 'Yes' : 'No'}`);
-  
+
   if (isIOS) {
     const elems = document.querySelectorAll('#home, #resume, #contact');
     console.log(elems);
@@ -94,4 +113,3 @@ function isIOS() {
     });
   }
 }
-

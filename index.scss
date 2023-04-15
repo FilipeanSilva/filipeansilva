@@ -1,4 +1,9 @@
 /*# sourceMappingURL=index.css.map */
+$main-color: #F2F2F4;
+$secondary-color: #D9D9DB;
+$third-color: #B3B3B5;
+$forth-color: #747475;
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +17,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
-    background-color: #f1f1f1;
+    background-color: $main-color;
 }
 
 .container {
@@ -26,8 +31,8 @@ body {
     top: 0;
     bottom: 0;
     width: 200px;
-    background-color: #f1f1f1;
-    border: 1px solid #333;
+    background-color: $main-color;
+    border: 1px solid $secondary-color;
     overflow-y: auto;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
@@ -52,9 +57,11 @@ body {
             display: flex;
             align-items: center;
             margin-bottom: 1em;
+            width: 100%;
 
             &:hover {
                 opacity: 0.7;
+                background-color: $secondary-color;
                 cursor: pointer;
             }
 
@@ -67,8 +74,6 @@ body {
             a {
                 display: block;
                 padding: 10px;
-                text-decoration: none;
-                color: #333;
             }
         }
     }
@@ -86,14 +91,10 @@ body {
         bottom: 0;
         width: 100%;
         height: 8%;
-        background-color: #333;
-        color: #fff;
+        background-color: $forth-color;
+        color: $main-color;
         padding: 10px;
         text-align: center;
-    }
-
-    .burger-menu {
-        display: none;
     }
 }
 
@@ -115,7 +116,7 @@ body {
     }
 
     .title {
-        background-color: #333;
+        background-color: $forth-color;
         margin-top: 0;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -131,47 +132,51 @@ body {
         height: 10vh;
 
         h1 {
-            color: white;
+            color: $main-color;
             margin: 0;
         }
     }
 
-    .text {
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 3em;
-        letter-spacing: 1px;
-        height: 20%;
-    }
-
     h1 {
-        color: #5e5e5e;
+        color: $main-color;
         font-family: Georgia, "Times New Roman", Times, serif;
         text-align: center;
     }
 
     h3 {
-        color: #5e5e5e;
+        color: $secondary-color;
         text-align: center;
     }
 
     h4 {
         margin-top: 5px;
-        color: #797979;
+        color: $third-color;
         text-align: center;
     }
 
     h5 {
         margin-top: 5px;
-        color: #979797;
+        color: $forth-color;
         text-align: center;
     }
 
     #home {
-        background-image: url(/data/imgs/Background/backgroundHome.jpg);
+        background-image: url(/data/imgs/Background/home.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+
+        h1 {
+            color: $third-color;
+        }
+
+        h3 {
+            color: $secondary-color;
+        }
+
+        h4 {
+            color: $forth-color;
+        }
 
         .text {
             padding: 1em;
@@ -189,7 +194,7 @@ body {
     }
 
     #resume {
-        background-image: url(/data/imgs/Background/backgroundResume.jpeg);
+        background-image: url(/data/imgs/Background/resume.avif);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -211,42 +216,70 @@ body {
             height: 100%;
             align-items: flex-start;
 
+            h3 {
+                color: $forth-color;
+                margin-top: 1em;
+            }
+
+            h5 {
+                color: $third-color;
+                height: 50%;
+                margin-left: 2em;
+            }
+
             #companiesContent {
-                width: 95%;
-                height: 40%;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: flex-start;
-
-                h3 {
-                    margin-top: 1em;
-                }
-
-                h5 {
-                    height: 50%;
-                    margin-left: 2em;
-                }
+                width: 95%;
+                height: 40%;
 
                 img {
                     width: 5em;
                 }
 
-                .text {
-                    margin: 10px;
-                    height: 50%;
-                }
-
-                #meeitContent {
+                #content {
                     display: flex;
-                    flex-direction: row;
-                }
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
 
-                #adentisContent {
-                    display: flex;
-                    flex-direction: row;
-                    margin-top: 1em;
+                    #meeitContent {
+                        display: flex;
+                        flex-direction: row;
+
+                        img {
+                            position: relative;
+                            left: 0;
+                            transition: all 2s ease;
+                        }
+
+                        // #meeitText {
+                        //     position: relative;
+                        //     display: inline;
+                        //     opacity: 0;
+                        //     transition: all 5s ease;
+                        // }
+                    }
+
+
+                    #adentisContent {
+                        display: flex;
+                        flex-direction: row;
+
+                        img {
+                            position: relative;
+                            left: 0;
+                            transition: all 2s ease;
+                        }
+                    }
                 }
             }
+
+
+
 
             #languageAndEducationContent {
                 display: flex;
@@ -391,7 +424,6 @@ body {
                                             height: 0;
                                             margin: 0 1px;
                                             border-radius: 5px;
-                                            background-color: #2e4d67;
                                             opacity: 0;
                                             transform-origin: bottom center;
                                             width: 3px;
