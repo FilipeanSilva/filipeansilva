@@ -190,9 +190,12 @@ body {
   margin-top: 1em;
 }
 .main #resume #resumeContent h5 {
-  color: #B3B3B5;
+  color: rgb(143, 143, 143);
   height: 50%;
   margin-left: 2em;
+}
+.main #resume #resumeContent h4 {
+  color: rgb(143, 143, 143);
 }
 .main #resume #resumeContent #companiesContent {
   display: flex;
@@ -419,7 +422,7 @@ body {
 }
 .main #contact .content div:hover img {
   transition: transform 1s ease;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 .main #contact .content div:hover a {
   font-weight: bold;

@@ -222,9 +222,13 @@ body {
             }
 
             h5 {
-                color: $third-color;
+                color: rgb(143, 143, 143);
                 height: 50%;
                 margin-left: 2em;
+            }
+
+            h4 {
+                color: rgb(143, 143, 143);
             }
 
             #companiesContent {
@@ -502,7 +506,7 @@ body {
                 &:hover {
                     img {
                         transition: transform 1s ease;
-                        transform: scale(1.5);
+                        transform: scale(1.2);
                     }
 
                     a {
