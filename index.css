@@ -535,6 +535,9 @@ body {
     align-items: center;
     justify-content: center;
   }
+  .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent #certificationsBox .certifications {
+    justify-content: center;
+  }
   .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications #certificationsContent #certificationsBox .certifications h4 {
     display: none;
   }
