@@ -225,7 +225,8 @@ body {
             h5 {
                 color: rgb(143, 143, 143);
                 height: 50%;
-                margin-left: 2em;
+                margin: 0;
+                margin-left: 5px;
             }
 
             h4 {
@@ -314,7 +315,8 @@ body {
                             align-items: center;
 
                             h5 {
-                                margin-left: 2em;
+                                margin-left: 5px;
+                                height: auto;
                             }
 
                             &:hover {
@@ -358,7 +360,7 @@ body {
                                 justify-content: flex-start;
 
                                 img {
-                                    width: 4em;
+                                    width: 20%;
                                 }
 
                                 h4 {
