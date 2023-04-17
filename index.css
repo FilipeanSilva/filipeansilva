@@ -207,7 +207,7 @@ body {
   height: 40%;
 }
 .main #resume #resumeContent #companiesContent img {
-  width: 7em;
+  width: 100%;
 }
 .main #resume #resumeContent #companiesContent #content {
   display: flex;
@@ -224,12 +224,20 @@ body {
 .main #resume #resumeContent #companiesContent #content #meeitContent:hover {
   opacity: 0.7;
 }
+.main #resume #resumeContent #companiesContent #content #meeitContent #meeitImage {
+  width: 10em;
+  max-height: 30%;
+}
 .main #resume #resumeContent #companiesContent #content #adentisContent {
   display: flex;
   flex-direction: row;
 }
 .main #resume #resumeContent #companiesContent #content #adentisContent:hover {
   opacity: 0.7;
+}
+.main #resume #resumeContent #companiesContent #content #adentisContent #adentisImage {
+  width: 7em;
+  max-height: 30%;
 }
 .main #resume #resumeContent #languageAndEducationContent {
   display: flex;
@@ -240,7 +248,7 @@ body {
 }
 .main #resume #resumeContent #languageAndEducationContent img {
   all: unset;
-  width: 7em;
+  width: 100%;
 }
 .main #resume #resumeContent #languageAndEducationContent #educationContent {
   display: flex;
@@ -263,6 +271,10 @@ body {
 }
 .main #resume #resumeContent #languageAndEducationContent #educationContent #degree #degreeContent:hover {
   opacity: 0.7;
+}
+.main #resume #resumeContent #languageAndEducationContent #educationContent #degree #degreeContent #degreeImage {
+  width: 10em;
+  max-height: 30%;
 }
 .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications {
   display: flex;
@@ -470,6 +482,9 @@ body {
     justify-content: center;
     transition: all 0.5s ease-in-out;
   }
+  .main #resume #resumeContent #companiesContent #content img {
+    width: 70%;
+  }
   .main #resume #resumeContent #companiesContent #content h5 {
     display: none !important;
     transition: all 0.5s ease-in-out;
@@ -481,6 +496,9 @@ body {
   }
   .main #resume #resumeContent #degree h5 {
     display: none !important;
+  }
+  .main #resume #resumeContent #degree img {
+    width: 70%;
   }
   .main #resume #resumeContent #languageAndEducationContent #languageAndCertifications {
     margin-bottom: 1em;

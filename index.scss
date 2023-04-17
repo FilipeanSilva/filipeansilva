@@ -241,7 +241,7 @@ body {
                 height: 40%;
 
                 img {
-                    width: 7em;
+                    width: 100%;
                 }
 
                 #content {
@@ -261,6 +261,11 @@ body {
                         &:hover {
                             opacity: 0.7;
                         }
+
+                        #meeitImage {
+                            width: 10em;
+                            max-height: 30%;
+                        }
                     }
 
 
@@ -270,6 +275,11 @@ body {
 
                         &:hover {
                             opacity: 0.7;
+                        }
+
+                        #adentisImage {
+                            width: 7em;
+                            max-height: 30%;
                         }
                     }
                 }
@@ -284,7 +294,7 @@ body {
 
                 img {
                     all: unset;
-                    width: 7em;
+                    width: 100%;
                 }
 
                 #educationContent {
@@ -309,6 +319,11 @@ body {
 
                             &:hover {
                                 opacity: 0.7;
+                            }
+
+                            #degreeImage {
+                                width: 10em;
+                                max-height: 30%;
                             }
                         }
                     }
@@ -569,6 +584,9 @@ body {
                         justify-content: center;
                         transition: all 0.5s ease-in-out;
 
+                        img{
+                            width: 70%;
+                        }
 
                         h5 {
                             display: none !important;
@@ -584,6 +602,10 @@ body {
 
                     h5 {
                         display: none !important;
+                    }
+
+                    img{
+                        width: 70%;
                     }
                 }
 
@@ -643,13 +665,13 @@ body {
             }
         }
 
-        #contact{
-            .section{
-                .content{
+        #contact {
+            .section {
+                .content {
                     font-size: 1.2em;
                 }
 
-                img{
+                img {
                     width: 3em;
                 }
             }
