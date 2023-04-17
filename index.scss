@@ -215,10 +215,11 @@ body {
             flex-direction: column;
             height: 100%;
             align-items: flex-start;
+            padding: 1em 0 1em 10%;
 
             h3 {
                 color: $forth-color;
-                margin-top: 1em;
+                margin-top: 0;
             }
 
             h5 {
@@ -553,7 +554,7 @@ body {
 
             #resumeContent {
                 width: 100%;
-                margin: 1em 0 1em 10%;
+                padding: 1em 0 1em 10%;
 
                 h5 {
                     margin-top: 0;

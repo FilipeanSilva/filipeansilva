@@ -184,10 +184,11 @@ body {
   flex-direction: column;
   height: 100%;
   align-items: flex-start;
+  padding: 1em 0 1em 10%;
 }
 .main #resume #resumeContent h3 {
   color: #747475;
-  margin-top: 1em;
+  margin-top: 0;
 }
 .main #resume #resumeContent h5 {
   color: rgb(143, 143, 143);
@@ -455,7 +456,7 @@ body {
   }
   .main #resume #resumeContent {
     width: 100%;
-    margin: 1em 0 1em 10%;
+    padding: 1em 0 1em 10%;
   }
   .main #resume #resumeContent h5 {
     margin-top: 0;
