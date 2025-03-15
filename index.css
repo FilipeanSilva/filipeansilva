@@ -40,7 +40,6 @@ body {
 }
 .sidebar #big-sidebar {
   list-style: none;
-  margin-top: 3em;
   margin-left: 0;
   padding: 0;
   display: flex;
